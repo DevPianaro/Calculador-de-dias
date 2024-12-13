@@ -8,8 +8,10 @@
     box-sizing: border-box;
   }
 
-  .body{
+  html, body{
     background-color: black;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   #header {
@@ -18,6 +20,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   #header  img{
@@ -53,6 +57,11 @@
   align-items: center;
   justify-content: center;
   padding-top: 17vh;
+  }
+
+  input, #btn{
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .input-container input{
@@ -96,7 +105,7 @@
   }
 
   #btn{
-  padding: 10px 20px;
+    padding: 10px 20px;
   border: none;
   font-size: 17px;
   font-family: 'poppins';
@@ -107,20 +116,20 @@
   text-transform: uppercase;
   transition: 0.5s;
   transition-property: box-shadow;
+  background-color: rgb(104, 0, 178);
+  box-shadow: 0 0 25px rgb(104, 0, 178);
+  width: 100%; 
+  max-width: 400px; 
+  margin: 35px auto; 
   }
 
-  #btn{
-    margin-top: 35px;
-    margin-left: 115px;
-    background-color: rgb(104, 0, 178);
-    box-shadow: 0 0 25px rgb(104, 0, 178)
-  }
+
 
   #btn:hover {
     box-shadow: 0 0 5px rgb(104, 0, 178),
     0 0 25px rgb(104, 0, 178),
     0 0 50px rgb(104, 0, 178),
-    0 0 100px rgb(104, 0, 178);;
+    0 0 100px rgb(104, 0, 178);
   }
 
   #res h2{
@@ -140,13 +149,14 @@
     justify-content: center;
     text-align: center;
     margin-top: 40px;
-    padding-right: 20px;
+    padding-top: 20px;
   }
 
 
  
 /* Responsividade até 888px */
 @media (max-width: 888px) {
+
   #header img {
       width: 60px;
       height: 60px;
@@ -163,8 +173,12 @@
       font-size: 1.5rem;
   }
 
-  #navList ul li {
-      list-style: none;
+  #navList {
+    display: none;
+  }
+
+  #navList ul li a {
+      display: none;
   }
 
 
@@ -173,7 +187,7 @@
   }
 
   .input-container input {
-      width: 85%;
+      width: 100%;
       font-size: 14px;
       margin-bottom: 50px;
       margin-left: 4%;
@@ -194,11 +208,10 @@
   }
 
   #btn {
-      width: 290px;
-      padding: 9px;
-      font-size: 1.2rem;
-      margin: 0;
-      margin-left: 9%;
+    width: 99%; 
+    display: flex;
+    align-items: center; 
+    margin: 20px auto; 
   }
 
   #res h2 {
@@ -207,8 +220,11 @@
   }
 
   footer {
+      display: flex;
+      text-align: center;
+      justify-content: center;
       font-size: 1rem;
-      padding: 20px;
-      margin-right: 5%;
+      padding: 0;
+      margin: 0;
   }
 }
