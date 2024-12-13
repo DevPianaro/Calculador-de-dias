@@ -1,0 +1,214 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .body{
+    background-color: black;
+  }
+
+  #header {
+    background-color: #53007D;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+
+  #header  img{
+    width: 73px;
+    height: 73px;
+  }
+  
+
+  .h1-header{
+    color: #fff;
+    padding-top: 15px;
+    font-family: 'poppins';
+    font-weight: 600;
+  }
+
+  #navList ul li{
+    list-style: none;
+    cursor: pointer;
+    margin-left: 900px;
+    margin-top: 20.2px;
+  }
+
+  #navList ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.5rem;
+   position: absolute;
+   font-family: 'poppins';
+  }
+
+  .input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 17vh;
+  }
+
+  .input-container input{
+    background-color: #53007D;
+    color: rgba(188, 188, 188, 0.868);
+    font-family: 'inter';
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 402px;
+    height: 43px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .input-container{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    
+  }
+
+  label{
+    color: #fff;
+    font-family: 'poppins';
+    font-weight: 350;
+    display: flex;
+    margin-top: 29px;
+  }
+
+
+  .geral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  #btn{
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  font-family: 'poppins';
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  }
+
+  #btn{
+    margin-top: 35px;
+    margin-left: 115px;
+    background-color: rgb(104, 0, 178);
+    box-shadow: 0 0 25px rgb(104, 0, 178)
+  }
+
+  #btn:hover {
+    box-shadow: 0 0 5px rgb(104, 0, 178),
+    0 0 25px rgb(104, 0, 178),
+    0 0 50px rgb(104, 0, 178),
+    0 0 100px rgb(104, 0, 178);;
+  }
+
+  #res h2{
+    padding-bottom: 1px; 
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    font-family: 'poppins';
+    margin-top: 45px;
+    color: #53007D;
+    
+  }
+
+  footer{
+    font-family: 'poppins';
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    padding-right: 20px;
+  }
+
+
+ 
+/* Responsividade até 888px */
+@media (max-width: 888px) {
+  #header img {
+      width: 60px;
+      height: 60px;
+  }
+
+  #header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .h1-header {
+      text-align: center;
+      font-size: 1.5rem;
+  }
+
+  #navList ul li {
+      list-style: none;
+  }
+
+
+  .input {
+      padding-top: 15vh;
+  }
+
+  .input-container input {
+      width: 85%;
+      font-size: 14px;
+      margin-bottom: 50px;
+      margin-left: 4%;
+  }
+
+  label {
+      font-size: 1rem;
+  }
+
+
+  .geral {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+  }
+
+  #btn {
+      width: 290px;
+      padding: 9px;
+      font-size: 1.2rem;
+      margin: 0;
+      margin-left: 9%;
+  }
+
+  #res h2 {
+      font-size: 1.4rem;
+      margin-right: 5%;
+  }
+
+  footer {
+      font-size: 1rem;
+      padding: 20px;
+      margin-right: 5%;
+  }
+}

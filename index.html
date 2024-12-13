@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de dias</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./image/logo-daniel2.jpeg" type="image/png" />
+</head>
+<body class="body">
+
+<header id="header">
+    <img src="./image/Logo-DanielPianaro.png" alt="logo-danielpianaro">
+    <h1 class="h1-header">Contador de dias</h1>
+    <nav id="navList">
+        <ul>
+            <li><a href="#">Mais ferramentas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="input">
+    <div class="input-container">
+        <form id="form">
+            <label for="dataInicio">Data de início</label>
+            <input type="date" id="dataInicio" required>
+
+            <label for="dataFim">Data final</label>
+            <input type="date" id="dataFim" required>
+
+           
+            <button id="btn" type="submit">Calcular</button>
+        </form>
+    </div>
+</section>
+
+<section class="geral">
+    <div id="res">  </div> 
+</section>
+
+<footer>
+    &copy; DevPianaro
+</footer>
+
+<script src="./Js/script.js"></script>
+
+</body>
+</html>
